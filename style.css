@@ -1,80 +1,94 @@
 body {
     background-color: #F2F5F7;
 }
+
 /* nabvar */
-.navigation{
+.navigation {
     height: 75px;
 }
+
 .header {
     background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: fixed;
     width: 100%;
     z-index: 3;
-  }
-  
-  .header ul {
+}
+
+.header ul {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
     background-color: #fff;
-  }
-  
-  .header li a {
+}
+
+.header li a {
     display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    padding: 20px 10px;
     text-decoration: none;
-  }
-  
-  .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #f4f4f4;
-  }
-  
-  .header .logo {
+    color: #ce1b28;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    color: #1A2020;
+}
+
+.header li:last-child {
+    background-color: #ce1b28;
+
+}
+.header li:last-child a{
+    color: #fff !important;
+    padding: 20px 30px;
+}
+
+.header .logo {
     display: block;
     float: left;
     font-size: 2em;
-   padding-left: 20px;
+    padding-left: 20px;
     text-decoration: none;
-  }
-  .header .logo img{
+}
+
+.header .logo img {
     width: 160px;
     height: auto;
-  }
-  
-  /* menu */
-  
-  .header .menu {
+}
+
+/* menu */
+
+.header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
+}
+
+/* menu icon */
+
+.header .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
-  }
-  
-  .header .menu-icon .navicon {
+}
+
+.header .menu-icon .navicon {
     background: #333;
     display: block;
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
     width: 18px;
-  }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
     background: #333;
     content: '';
     display: block;
@@ -82,62 +96,65 @@ body {
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
-  }
-  
-  .header .menu-icon .navicon:before {
+}
+
+.header .menu-icon .navicon:before {
     top: 5px;
-  }
-  
-  .header .menu-icon .navicon:after {
+}
+
+.header .menu-icon .navicon:after {
     top: -5px;
-  }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
+}
+
+/* menu btn */
+
+.header .menu-btn {
     display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 350px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
     background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
     transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
     transform: rotate(45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
     top: 0;
-  }
-  
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
     .header li {
-      float: left;
+        float: left;
     }
+
     .header li a {
-      padding: 20px 30px;
+        padding: 20px 10px;
     }
+
     .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
+        clear: none;
+        float: right;
+        max-height: none;
     }
+
     .header .menu-icon {
-      display: none;
+        display: none;
     }
-  }
-  
+}
+
 /* service */
 
 .serviceHeading h2 {
@@ -148,7 +165,7 @@ body {
     line-height: 1.2;
     color: #fff;
     font-size: 2.5625rem;
-  
+
 }
 
 .serviceHeading h2:before {
@@ -175,7 +192,8 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.serviceContent{
+
+.serviceContent {
     margin: 50px 0px;
 }
 
@@ -214,7 +232,7 @@ body {
     height: 56px;
     text-align: center;
     align-items: center;
-display: grid;
+    display: grid;
 }
 
 .service-2 {
@@ -238,7 +256,7 @@ display: grid;
     height: 56px;
     text-align: center;
     align-items: center;
-display: grid;
+    display: grid;
 }
 
 .service-3 {
@@ -262,7 +280,7 @@ display: grid;
     height: 56px;
     text-align: center;
     align-items: center;
-display: grid;
+    display: grid;
 }
 
 .service-4 {
@@ -286,7 +304,7 @@ display: grid;
     height: 56px;
     text-align: center;
     align-items: center;
-display: grid;
+    display: grid;
 }
 
 .service-5 {
@@ -310,7 +328,7 @@ display: grid;
     height: 56px;
     text-align: center;
     align-items: center;
-display: grid;
+    display: grid;
 }
 
 .service-6 {
@@ -334,13 +352,14 @@ display: grid;
     height: 56px;
     text-align: center;
     align-items: center;
-display: grid;
+    display: grid;
 }
 
 /* why choose */
-.whyChooseUs{
+.whyChooseUs {
     margin: 80px 0px;
 }
+
 .whychooseusHeading h2 {
     position: relative;
     margin: 20px 0px;
@@ -374,24 +393,8 @@ display: grid;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.firstBox{
-  height: 486px;
-  margin: 46px 0px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
-.sceondBox{
-    height: 486px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
-.thirdBox{
+
+.firstBox {
     height: 486px;
     margin: 46px 0px;
     border-radius: 25px;
@@ -400,6 +403,26 @@ display: grid;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+
+.sceondBox {
+    height: 486px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.thirdBox {
+    height: 486px;
+    margin: 46px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
 .pricing {
     position: relative;
     background: #3498db;
@@ -436,7 +459,8 @@ display: grid;
     text-transform: uppercase;
     font-weight: 700;
 }
-.pricing .cardTop{
+
+.pricing .cardTop {
     padding: 50px 0px;
 }
 
@@ -451,8 +475,8 @@ display: grid;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
-    border-bottom-left-radius:25px;
-    border-bottom-right-radius:25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .pricing .content ul {

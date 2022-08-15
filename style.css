@@ -164,10 +164,11 @@ body {
 /* Banner */
 .bannerSection {
     height: 100vh;
-    background-image: url("https://web.archive.org/web/20220731044153im_/https://stacksharp.com/images/banner.png");
+    /* background-image: url("https://web.archive.org/web/20220731044153im_/https://stacksharp.com/images/banner.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #fff;
 }
 
 .bannerContent p {
@@ -178,9 +179,74 @@ body {
     line-height: normal;
     margin-bottom: 20px;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
+}
+.bannerContent h2{
+    color: #1A2020;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
+.bannerImage img {
+    width: 100%;
+}
+.rightHero{
+    position: relative;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.rightHero img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+   
+}
+.circle-1 {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 10px dotted #1A2020;
+    transform: rotate(0deg);
+  transition: transform 0.7s linear;
+  animation: rotate 7s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+.circle-1 img {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+}
+
+/* .circle-1:hover img {
+   transform: scale(1.1);
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+    box-shadow: 2px 2px 2px #4b4b4b;
+    
+  } */
 .banner {
     position: relative;
     z-index: 1;
@@ -242,7 +308,7 @@ body {
     height: 100%;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.9);
-    color: #666;
+    color: #ce1b28;
     text-shadow: 1px 1px 0 #444;
 }
 
@@ -511,7 +577,7 @@ body {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    border: 2px solid #1A2020;
+    border: 5px solid #1A2020;
 }
 
 .thirdBox {
@@ -575,7 +641,7 @@ body {
 }
 
 .pricing .content .sub-title {
-    background: #eee;
+    background: #fff;
     padding: 20px;
     color: #222;
     font-size: 18px;
@@ -908,10 +974,12 @@ body {
     font-size: 12px;
     color: #000;
 }
-.contact .form-group textarea{
+
+.contact .form-group textarea {
     height: 180px;
     background-color: #fff !important;
 }
+
 .contactHeading h2 {
     position: relative;
     margin-bottom: 80px;

@@ -168,17 +168,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: #fff;
+    background-color: #242424;
+    background-color: #d55050;
 }
 
 .bannerContent p {
-    color: #d55443;
+    color: #fff;
     font-size: 28px;
     font-weight: 800;
     letter-spacing: .5px;
     line-height: normal;
     margin-bottom: 20px;
-    text-transform: uppercase;
+  
     /* text-align: center; */
 }
 .bannerContent h2{
@@ -193,6 +194,13 @@ body {
 
 .bannerImage img {
     width: 100%;
+}
+.leftContent{
+    position: relative;
+    display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .rightHero{
     position: relative;
@@ -293,13 +301,13 @@ body {
     height: 0;
     border-width: 38px;
     border-style: solid;
-    border-color: rgba(180, 180, 180, 0.8) rgba(180, 180, 180, 0.8) transparent transparent;
+    border-color: rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8) transparent transparent;
     background: transparent;
 }
 
 .banner .line:last-child:after {
     top: 12px;
-    border-color: transparent transparent rgba(180, 180, 180, 0.8) rgba(180, 180, 180, 0.8);
+    border-color: transparent transparent rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8);
 }
 
 .banner span {
@@ -352,6 +360,7 @@ body {
 
 .serviceContent {
     margin: 50px 0px;
+    height: 247px;
 }
 
 .serviceContent h3 {
@@ -524,6 +533,7 @@ body {
 /* why choose */
 .whyChooseUs {
     margin: 80px 0px;
+    overflow: hidden !important;
 }
 
 .whychooseusHeading h2 {
@@ -774,7 +784,7 @@ body {
     border: none;
     background: none;
     outline: none;
-    padding: 13px 15px;
+    padding: 13px 20px;
 }
 
 .accordion button:hover,
@@ -1013,3 +1023,18 @@ body {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+@media screen and (max-width: 576px) {
+    .bannerSection{
+        height: auto !important;
+    }
+    .contactHeading h2 {
+        font-size: 28px;
+      }
+      .faqHeading h2 {
+        font-size: 16px;
+      }
+      .whychooseusHeading h2 {
+        font-size: 24px;
+      }
+  }

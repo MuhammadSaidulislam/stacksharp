@@ -1,3 +1,63 @@
+AOS.init({
+
+})
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+// hamburger
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+
+// accordion
+$(document).ready(function () {
+  $("#accordian a").click(function () {
+    var link = $(this);
+    var closest_ul = link.closest("ul");
+    var parallel_active_links = closest_ul.find(".active")
+    var closest_li = link.closest("li");
+    var link_status = closest_li.hasClass("active");
+    var count = 0;
+
+    closest_ul.find("ul").slideUp(function () {
+      if (++count == closest_ul.find("ul").length)
+        parallel_active_links.removeClass("active");
+    });
+
+    if (!link_status) {
+      closest_li.children("ul").slideDown();
+      closest_li.addClass("active");
+    }
+  })
+})
+
 function showEIPModal() {
     jQuery(".pu-overlay").addClass("active"),
         jQuery("#bounceModal").addClass("active")

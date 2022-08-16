@@ -10,22 +10,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
   <!-- font awesome icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css" integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css" integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css"
+    integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+    integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css"
+    integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css"
+    integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- custom css -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./menu.css">
 </head>
 
 <body>
   <!-- navbar start -->
   <section class="navigation">
-    <header class="header">
+    <!-- <header class="header">
       <a href="" class="logo"><img src="./logo.png" alt="logo"></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -36,6 +47,604 @@
         <li><a href="#faq">Faq</a></li>
         <li style="float: right;"><a href="#contact">Contact</a></li>
       </ul>
+    </header> -->
+    <header id="header" class="site-header sticky">
+      <div class="header-inner">
+        <div id="header-left">
+          <div id="logo">
+            <a href="/"><img src="./logo.png" alt="Redscan Logo" class=" lazyloaded" width="196" height="59"></a>
+          </div>
+          <nav id="site-navigation" class="main-navigation ">
+            <div class="main-menu">
+              <ul class="menu menu-watch">
+                <li class="menu-watch"><a href="https://www.redscan.com/services/"><span>Home</span></a></li>
+                <li class="mega-selector menu-watch mega-menu" data-mega-menu="11663"><a
+                    href="https://www.redscan.com/services/"><span>Services</span></a></li>
+                <li data-mega-menu="11688" class="mega-selector menu-watch mega-menu"><a
+                    href="https://www.redscan.com/solutions/"><span>Solutions</span></a></li>
+                <li class="mega-selector menu-watch mega-menu" data-mega-menu="11732"><a
+                    href="https://www.redscan.com/company/"><span>Company</span></a></li>
+                <li class="menu-watch" data-mega-menu="11732"><a
+                    href="https://www.redscan.com/company/"><span>Why choose us</span></a></li>
+                <li class="menu-watch" data-mega-menu="11732"><a
+                    href="https://www.redscan.com/company/"><span>Faq</span></a></li>
+                    <li style="float: right !important; position: absolute; right: 0px; background-color: #ce1b28; padding: 10px 15px; color: #fff !important;" class="menu-watch" data-mega-menu="11732"><a
+                      href="https://www.redscan.com/company/"><span>Contact</span></a></li>
+              </ul>
+              
+              <div class="main-menu__mega menu-watch" data-mega-id="11663" style="left: 0px;">
+                <div class="main-menu__mega-section menu-watch" style="height: 42px;">
+                  <ul class="main-menu__mega-links menu-watch">
+                    <li class="menu-watch " data-sublink="11671">
+                      <span class="a no-link menu-watch arrow-active">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper as-v2"></span>Protect
+                        </div>
+                        <div class="menu-description">Offensive security assessment and consultancy
+                          services</div>
+
+                      </span>
+                    </li>
+                    <li class="menu-watch " data-sublink="11664">
+                      <span class="a no-link menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper mdr"></span>Detect
+                        </div>
+                        <div class="menu-description">Outcome-focused MDR fuelled by frontline
+                          intelligence</div>
+
+                      </span>
+                    </li>
+                    <li class="menu-watch " data-sublink="11779">
+                      <span class="a no-link menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper mss"></span>Respond
+                        </div>
+                        <div class="menu-description">Unrivaled response through the entire incident
+                          lifecycle</div>
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-menu__mega-section menu-watch" style="height: 373px;">
+                  <ul class="main-menu__mega-sublinks menu-watch active" data-sublink-id="11671">
+                    <div class="mega-title-wrapper menu-watch">
+                      <ul class="menu-watch">
+                        <li class="mega-title menu-watch ">
+                          Offensive Security </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/penetration-testing/" class="menu-watch">Penetration
+                            Testing<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/penetration-testing/web-application-testing/"
+                            class="menu-watch">Web Application Testing<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/cloud-penetration-testing/" class="menu-watch">Cloud
+                            Penetration Testing<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/red-team-operations/" class="menu-watch">Red
+                            Teaming<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/breach-and-attack-simulation/"
+                            class="menu-watch">Breach and Attack Simulation<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/vulnerability-assessment/"
+                            class="menu-watch">Vulnerability Assessment<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/ransomware-preparedness-assessment/"
+                            class="menu-watch">Ransomware Preparedness<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/scenario-based-testing/"
+                            class="menu-watch">Scenario-Based Testing<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                      </ul>
+                    
+                    </div>
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11664" style="">
+                    <div class="mega-title-wrapper menu-watch">
+                      <ul class="menu-watch">
+                        <li class="mega-title menu-watch ">
+                          Managed Detection and Response </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/managed-detection-and-response/"
+                            class="menu-watch">Kroll Responder<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/managed-detection-and-response/use-cases/"
+                            class="menu-watch">Use Cases<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/managed-detection-and-response/cyberops/"
+                            class="menu-watch">Redscan Platform<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/managed-detection-and-response/mdr-features/"
+                            class="menu-watch">Features Table<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/managed-detection-and-response/mdr-vs-mssp/"
+                            class="menu-watch">MDR vs MSSP<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                      </ul>
+                    </div>
+                    
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11779" style="">
+                    <div class="mega-title-wrapper menu-watch">
+                      <ul class="menu-watch">
+                        <li class="mega-title menu-watch ">
+                          Digital Forensics and Incident Response </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/cyber-incident-response/" class="menu-watch">Cyber
+                            Incident Response<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/cyber-incident-response-planning/"
+                            class="menu-watch">Incident Response Planning<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/breach-notification/" class="menu-watch">Breach
+                            Notification<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/cyber-security-digital-forensics/"
+                            class="menu-watch">Digital Forensics<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/cyber-litigation-support/"
+                            class="menu-watch">Litigation Support<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                        <li class="menu-watch ">
+                          <a href="https://www.redscan.com/services/malware-analysis-and-reverse-engineering/"
+                            class="menu-watch">Malware Analysis &amp;<br>Reverse
+                            Engineering<span class="hover-arrow menu-watch"><span
+                                class="rs-icon-wrapper arrow red"></span></span></a>
+                        </li>
+
+                      </ul>
+                    </div>
+                   
+
+                  </ul>
+                </div>
+              </div>
+              <div data-mega-id="11688" style="left: 110.983px;" class="main-menu__mega menu-watch">
+                <div class="main-menu__mega-section menu-watch" style="height: 42px;">
+                  <ul class="main-menu__mega-links menu-watch">
+                    <li class="menu-watch two-column" data-sublink="11689">
+                      <a href="/industries/" class="a menu-watch active">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper energy"></span>Industry
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class="menu-watch " data-sublink="11704">
+                      <a href="/services/comply/" class="a menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper compliance-v3"></span>Compliance
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class="menu-watch " data-sublink="11712">
+                      <a href="/services/cloud-security-management-and-monitoring/" class="a menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper environment"></span>Cloud Security
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class="menu-watch " data-sublink="11721">
+                      <a href="/solutions/challenges/" class="a menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper target"></span>Security Challenge
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-menu__mega-section menu-watch" style="height: 404px;">
+                  <ul class="main-menu__mega-sublinks menu-watch two-column active" data-sublink-id="11689">
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/education/" class="menu-watch">Education<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/energy/" class="menu-watch">Energy<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/finance/" class="menu-watch">Finance<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/fintech/" class="menu-watch">Fintech<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/government/" class="menu-watch">Government<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/healthcare/" class="menu-watch">Healthcare<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/industries/legal/" class="menu-watch">Legal<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+
+
+
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11704" style="">
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/gdpr/" class="menu-watch">GDPR<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/data-protection-act-2018/" class="menu-watch">DPA
+                        2018<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/pci-dss/" class="menu-watch">PCI
+                        DSS<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/iso-27001/" class="menu-watch">ISO
+                        27001<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/nis-directive-and-nis-regulations/"
+                        class="menu-watch">NIS Directive<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/swift-customer-security-programme/"
+                        class="menu-watch">SWIFT CSP<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/nhs-data-security-and-protection-toolkit/"
+                        class="menu-watch">NHS DSP Toolkit<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11712" style="">
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/hybrid/"
+                        class="menu-watch">Hybrid Cloud<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/aws/"
+                        class="menu-watch">AWS<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/azure/"
+                        class="menu-watch">Azure<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/gcp-security-monitoring/"
+                        class="menu-watch">GCP<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/office-365/"
+                        class="menu-watch">Office 365<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/g-suite/"
+                        class="menu-watch">G Suite<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/hyper-v/"
+                        class="menu-watch">Hyper-V<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/vmware/"
+                        class="menu-watch">VMWare<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11721" style="">
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/mitigating-cyber-security-risk/"
+                        class="menu-watch">Mitigating cyber security risk<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/identifying-and-responding-to-threats/"
+                        class="menu-watch">Identifying and responding to threats<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/testing-cyber-security-readiness/"
+                        class="menu-watch">Testing cyber security readiness<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/cloud-security-management-and-monitoring/"
+                        class="menu-watch">Managing cloud security<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/investigating-and-reporting-data-breaches/"
+                        class="menu-watch">Investigating and reporting breaches<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/protecting-against-malware/"
+                        class="menu-watch">Protecting against malware<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/preventing-phishing-bec-attacks/"
+                        class="menu-watch">Tackling phishing and BEC attacks<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/insider-threats-cyber-security/"
+                        class="menu-watch">Defending against insider threats<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/services/gdpr/" class="menu-watch">Achieving
+                        GDPR compliance<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/solutions/securing-remote-workers/" class="menu-watch">Securing
+                        remote workers<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="main-menu__mega menu-watch" data-mega-id="11732" style="left: 228.65px;">
+                <div class="main-menu__mega-section menu-watch" style="height: 42px;">
+                  <ul class="main-menu__mega-links menu-watch">
+                    <li class="menu-watch " data-sublink="11733">
+                      <a href="/company/" class="a menu-watch arrow-active">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper property"></span>About
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class="menu-watch " data-sublink="11740">
+                      <a href="/resources/" class="a menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper news"></span>Resources
+                        </div>
+
+                      </a>
+                    </li>
+                    <li class="menu-watch " data-sublink="11748">
+                      <a href="/general-enquiries/" class="a menu-watch">
+
+                        <div class="menu-title">
+                          <span class="rs-icon-wrapper location"></span>Contact Us
+                        </div>
+
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-menu__mega-section menu-watch" style="height: 305px;">
+                  <ul class="main-menu__mega-sublinks menu-watch active" data-sublink-id="11733">
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/" class="menu-watch">Company
+                        Overview<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/management-team/" class="menu-watch">Leadership<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/careers/" class="menu-watch">Careers<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/awards-and-recognition/" class="menu-watch">Awards<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/accreditations-and-memberships/"
+                        class="menu-watch">Accreditations<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/redscan-labs/" class="menu-watch">Redscan Labs<span
+                          class="hover-arrow menu-watch"><span class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11740" style="">
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/news/" class="menu-watch">Cyber Security
+                        Blog<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/company/case-studies/" class="menu-watch">Case
+                        Studies<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/resources/" class="menu-watch">Resource
+                        Hub<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/press-releases/" class="menu-watch">Press
+                        Releases<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/media-coverage/" class="menu-watch">Media
+                        Coverage<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/cyber-security-glossary/" class="menu-watch">Cyber Security
+                        Glossary<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/covid-19-security-resource-centre/" class="menu-watch">COVID-19
+                        Resource Centre<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                  </ul>
+                  <ul class="main-menu__mega-sublinks menu-watch" data-sublink-id="11748" style="">
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/general-enquiries/" class="menu-watch">General
+                        Enquiries<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/general-enquiries/customer-support/" class="menu-watch">Customer
+                        Support<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/partners/" class="menu-watch">Partner With
+                        Us<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                    <li class="menu-watch ">
+                      <a href="https://www.redscan.com/media-requests/" class="menu-watch">Media
+                        Requests<span class="hover-arrow menu-watch"><span
+                            class="rs-icon-wrapper arrow red"></span></span></a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </nav>
+        </div>
+
+      </div>
     </header>
   </section>
   <!-- navabr end -->
@@ -316,16 +925,17 @@
         <div class="row">
           <div class="col-md-7 item text">
             <h3>Stacksharp - Web applciation Penetration Testing</h3>
-            <p>Providing top of the range penetration testing utilities to identify all website vulnerabilities and mitigating the risks to keep your website and client data safe.</p>
+            <p>Providing top of the range penetration testing utilities to identify all website vulnerabilities and
+              mitigating the risks to keep your website and client data safe.</p>
           </div>
           <div class="col-sm-6 col-md-3 item">
             <h3>Services</h3>
             <ul>
               <li><a href="#home">Home</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#choose">Why Choose us</a></li>
-        <li><a href="#faq">Faq</a></li>
-        <li><a href="#contact">Contact</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#choose">Why Choose us</a></li>
+              <li><a href="#faq">Faq</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <div class="col-sm-6 col-md-2 item">
@@ -336,20 +946,26 @@
               <li><a href="#">Careers</a></li>
             </ul>
           </div>
-          
+
           <div class="col item social">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
-        <p class="copyright">© Copyright 2022 Website by <a href="#" style="color:white;font-weight:500;">stackSharp</a>. All Rights reserved.</p>
+        <p class="copyright">© Copyright 2022 Website by <a href="#"
+            style="color:white;font-weight:500;">stackSharp</a>. All Rights reserved.</p>
       </div>
     </footer>
   </div>
   <!-- footer end -->
   <!-- script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./menu.js"></script>
   <script>
     AOS.init({
 

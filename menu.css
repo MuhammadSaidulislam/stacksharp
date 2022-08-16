@@ -1,9 +1,15 @@
 a {
     text-decoration: none;
 }
-
+#header #header-left #logo img {
+    -webkit-transition:max-width 0.5s linear;
+    -o-transition:max-width 0.5s linear;
+    transition:max-width 0.5s linear;
+    max-width:160px;
+    max-height:48px
+   }
 #header {
-    height: 5.75rem;
+    height: 58px;
     background: rgba(255, 255, 255, 0.9);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -200,8 +206,8 @@ a {
 
 #site-navigation .main-menu__mega {
     position: absolute;
-    top: 5.75rem;
-    max-width: 900px;
+    top: 76px;
+    max-width: 750px;
     width: 100%;
     width: 100%;
     display: -webkit-box;

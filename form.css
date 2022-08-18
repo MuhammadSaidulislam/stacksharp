@@ -7,9 +7,6 @@ html {
     height: 100%
 }
 
-p {
-    color: grey
-}
 
 #heading {
     text-transform: uppercase;
@@ -69,25 +66,31 @@ p {
 
 #msform .action-button {
     width: 100px;
-    background: #673AB7;
+    background: #ce1b28;
     font-weight: bold;
     color: white;
     border: 0 none;
     border-radius: 0px;
     cursor: pointer;
     padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
+    margin: 10px 0px 10px 20px;
+    float: right;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: #311B92
+    background-color: #ce1b28;
+    box-shadow: 2px 1px 7px 0px #ce1b28;
 }
 
 #msform .action-button-previous {
     width: 100px;
-    background: #616161;
+    background: #1A2020;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -95,12 +98,18 @@ p {
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px 10px 0px;
-    float: right
+    float: right;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-    background-color: #000000
+    background: #1A2020;
+    box-shadow: 3px 2px 6px 0px #1A2020AB;
 }
 
 .card {
@@ -131,8 +140,10 @@ p {
 }
 
 .fieldlabels {
-    color: gray;
-    text-align: left
+    color: #022339;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .progress {
@@ -146,4 +157,13 @@ p {
 .fit-image {
     width: 100%;
     object-fit: cover
+}
+.form-card span{
+    color: #ce1b28;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    display: block;
 }

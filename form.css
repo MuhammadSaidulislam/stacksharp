@@ -10,8 +10,9 @@ html {
 
 #heading {
     text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal
+    color: #ce1b28;
+    font-weight: 700;
+    font-size: 36px;
 }
 
 #msform {
@@ -120,10 +121,10 @@ html {
 
 .fs-title {
     font-size: 25px;
-    color: #673AB7;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left
+color: #ce1b28;
+margin-bottom: 15px;
+text-align: left;
+font-weight: 700;
 }
 
 .purple-text {
@@ -132,11 +133,11 @@ html {
 }
 
 .steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right
+    font-size: 22px;
+color: #222;
+margin-bottom: 10px;
+font-weight: 400;
+text-align: right;
 }
 
 .fieldlabels {
@@ -151,7 +152,7 @@ html {
 }
 
 .progress-bar {
-    background-color: #673AB7
+    background-color: #ce1b28;
 }
 
 .fit-image {

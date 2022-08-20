@@ -585,9 +585,7 @@ a {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-    .header li {
-        float: left;
-    }
+  
 
     .header li a {
         padding: 20px 10px;
@@ -606,12 +604,13 @@ a {
 
 /* Banner */
 .bannerSection {
-    height: 100vh;
+    height: auto;
     /* background-image: url("https://web.archive.org/web/20220731044153im_/https://stacksharp.com/images/banner.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
     background-color: #442020;
+    padding: 150px 0px;
 }
 
 .bannerContent p {
@@ -635,24 +634,21 @@ a {
     text-transform: uppercase;
 }
 
-.bannerImage img {
-    width: 100%;
-}
 
 .leftContent {
     position: relative;
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .rightHero {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* align-items: center; */
+    /* height: 100vh; */
 }
 
 .rightHero img {
@@ -1666,7 +1662,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 4px 1.5rem;
 }
 
 .hamburger {
@@ -1748,8 +1744,8 @@ a {
 }
 
 #accordian ul ul li a:hover {
-    background: #003545;
-    border-left: 5px solid lightgreen;
+    border-left: 5px solid #ce1b28;
+    color: #ce1b28;
 }
 
 #accordian ul ul {
@@ -1778,6 +1774,62 @@ a {
     content: "\f107";
 }
 
+
+.newBanner {
+    background-color: #fff;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("./Colonna/COLONNA.TTF");
+    src: url("./Colonna/ColonnaMT.ttf") format("ttf"),
+}
+
+.bannerImage {
+    text-align: center;
+}
+
+.bannerHeading h1 {
+    font-size: 56px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'CustomFont', Arial, sans-serif;
+}
+
+.bannerHeading h1 span {
+    color: red;
+}
+
+.bannerHeading p {
+    font-size: 22px;
+    color: red;
+    text-align: center;
+    font-weight: 700;
+}
+
+.bannerFooter h1 {
+    font-size: 26px;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+}
+
+.bannerFooter h2 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+}
+
+.bannerFooter h3 {
+    font-size: 20px;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 1076px) {
     .pcMenu {
         display: none;
@@ -1791,15 +1843,13 @@ a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 58px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        border-radius: 10px;
         text-align: left;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
     .nav-menu.active {
@@ -1829,10 +1879,47 @@ a {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .serviceContent {
+        height: 422px;
+    }
+
+    .footer-dark h3 {
+        height: 58px;
+    }
+
+    .circle-1 {
+        width: 320px;
+        height: 320px;
+    }
+
+    .rightHero img {
+        width: 310px;
+        height: 310px;
+        text-align: center;
+    }
+
+    .whyChooseUs .col-md-4 {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .pricing .content .sub-title {
+        padding: 16px 5px;
+        font-size: 16px;
+        height: 151px;
+    }
+}
+
 @media screen and (max-width: 778px) {
+    .bannerImage img {
+        text-align: center;
+        width: 100%;
+    }
 
     .bannerSection {
         height: auto !important;
+        padding: 10px 0px;
     }
 
     .contactHeading h2 {
@@ -1856,11 +1943,81 @@ a {
         width: 230px;
     }
 
-    .rightHero {
+    /* .rightHero {
         height: 50vh;
-    }
+    } */
 
     .footer-dark h3 {
         box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 442px) {
+
+    /* .leftContent {
+        height: 60vh;
+    } */
+
+    .circle-1 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .rightHero img {
+        width: 230px;
+    }
+
+    /* .rightHero {
+        height: 50vh;
+    } */
+
+    .footer-dark h3 {
+        box-shadow: none;
+    }
+
+    .accordion button {
+        padding: 13px 39px 13px 13px;
+    }
+
+    .accordion button .accordion-title {
+        font-size: 21px;
+    }
+
+    .footer-dark h3 {
+        height: auto;
+    }
+
+    .footer-dark .item.text p {
+        padding-right: 0px;
+    }
+
+    .pricing .content .sub-title {
+        height: 130px;
+        padding: 16px 10px;
+        font-size: 17px;
+    }
+
+    .whyChooseUs .col-md-4 {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .sceondService {
+        height: 470px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .accordion button .accordion-title {
+        font-size: 19px;
+    }
+
+    .circle-1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .rightHero img {
+        width: 220px;
     }
 }

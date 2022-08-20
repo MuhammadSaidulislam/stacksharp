@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Applicable questions</title>
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         crossorigin="anonymous">
-
+<!-- custom css -->
     <link rel="stylesheet" href="./form.css">
 
 
@@ -35,19 +35,22 @@
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-9">
-                                            <h2 class="fs-title">Application Testing:</h2>
+                                            <h2 class="fs-title">Application Testing :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 1 - 8</h2>
                                         </div>
                                     </div>
-                                    <label class="fieldlabels">Application / Website #1: </label>
-                                    <input type="text" name="applicationname" id="applicationname" placeholder="Application Name" />
-                                    <label class="fieldlabels">Application URL: </label>
-                                    <input type="text" name="applicationurl" id="applicationurl" placeholder="Application URL to be tested" />
-                                    <label class="fieldlabels">Environment:</label>
-                                    <input type="text" name="firstenvironment" id="firstenvironment" placeholder="Production / UAT" />
-                                    <label class="fieldlabels">Number of pages:</label>
+                                    <label class="fieldlabels">Application / Website #1 : </label>
+                                    <input type="text" name="applicationname" id="applicationname"
+                                        placeholder="Application Name" />
+                                    <label class="fieldlabels">Application URL : </label>
+                                    <input type="text" name="applicationurl" id="applicationurl"
+                                        placeholder="Application URL to be tested" />
+                                    <label class="fieldlabels">Environment :</label>
+                                    <input type="text" name="firstenvironment" id="firstenvironment"
+                                        placeholder="Production / UAT" />
+                                    <label class="fieldlabels">Number of pages :</label>
                                     <input type="number" name="numberofpages" id="numberofpages"
                                         placeholder="Dynamic pages, Total Pages/ Post login pages" />
                                     <label class="fieldlabels">Black box testing / Grey Box Testing or White box
@@ -55,35 +58,36 @@
                                     <input type="text" name="boxTesting" id="boxTesting"
                                         placeholder="Black box testing / Grey Box Testing or White box testing?" />
                                     <span>
-                                        ** Black box testing: Attack and Penetration without knowledge of application
+                                        ** Black box testing : Attack and Penetration without knowledge of application
                                         code
                                         or logic.
-                                        <br> Grey box testing: Attack and penetration with knowledge of user
-                                        credentials <br> White box testing: Security analysis of application source
+                                        <br> Grey box testing : Attack and penetration with knowledge of user
+                                        credentials <br> White box testing : Security analysis of application source
                                         code.
                                     </span>
-                                    <label class="fieldlabels">App functionality:</label>
+                                    <label class="fieldlabels">App functionality :</label>
                                     <input type="text" name="firstappfunctionality" id="firstappfunctionality"
                                         placeholder="e.g. online banking, credit card statement, e-commerce shop, etc." />
-                                    <label class="fieldlabels">Tentative start date:</label>
+                                    <label class="fieldlabels">Tentative start date :</label>
                                     <input type="date" name="tentativestartdate" id="tentativestartdate"
                                         placeholder="Client’s Timeline to complete the Project" />
-                                    <label class="fieldlabels">Testing to be done with credentials? (yes / no):</label>
-                                    <input type="text" name="firsttestingcredentials" id="firsttestingcredentials" placeholder="( YES / NO )" />
-                                    <label class="fieldlabels">User Roles available in the system:</label>
+                                    <label class="fieldlabels">Testing to be done with credentials? (yes / no) :</label>
+                                    <input type="text" name="firsttestingcredentials" id="firsttestingcredentials"
+                                        placeholder="( YES / NO )" />
+                                    <label class="fieldlabels">User Roles available in the system :</label>
                                     <input type="text" name="userroles" id="userroles"
                                         placeholder="Different roles available" />
                                     <label class="fieldlabels">Lines of Code * LOC (applicable only for source code
-                                        review code review):</label>
+                                        review code review) :</label>
                                     <input type="text" name="linescode" id="linescode"
                                         placeholder="List of files with lines of code" />
                                     <span>
-                                        Note: You can use Note: You can use CLOC tool which will help you to
+                                        Note : You can use Note : You can use CLOC tool which will help you to
                                         count the number of lines in the source code. All the instructions are
                                         mentioned for installation and calculations. Below mentioned is the URL of
-                                        this tool. (Note: Stacksharp is not responsible for any security
+                                        this tool. (Note : Stacksharp is not responsible for any security
                                         vulnerabilities that may be exist in the tool)
-                                        URL: http://cloc.sourceforge.net/
+                                        URL : http://cloc.sourceforge.net/
                                     </span>
                                 </div>
                                 <input type="button" name="next" class="next action-button" value="Next" />
@@ -94,16 +98,18 @@
                                     <div class="row">
                                         <div class="col-9">
                                             <h2 class="fs-title">Mobile Application Testing (Fill in case of
-                                                applicable):</h2>
+                                                applicable) :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 2 - 8</h2>
                                         </div>
                                     </div>
                                     <label class="fieldlabels">Application #2 </label>
-                                    <input type="text" name="application2" id="application2" placeholder="Application Name" />
+                                    <input type="text" name="application2" id="application2"
+                                        placeholder="Application Name" />
                                     <label class="fieldlabels">Does the Application communicate over http?</label>
-                                    <input type="text" name="applicationcommunicate" id="applicationcommunicate" placeholder="( Yes/No )" />
+                                    <input type="text" name="applicationcommunicate" id="applicationcommunicate"
+                                        placeholder="( Yes/No )" />
                                     <label class="fieldlabels">Application runs on which OS?</label>
                                     <input type="text" name="applicationruns" id="applicationruns"
                                         placeholder="e.g Android, iOS, Windows etc." />
@@ -111,7 +117,8 @@
                                     <input type="number" name="numberscreen" id="numberscreen"
                                         placeholder="Number of screens in the app" />
                                     <label class="fieldlabels">Environment</label>
-                                    <input type="text" name="sceondenvironment" id="sceondenvironment" placeholder="Production / UAT" />
+                                    <input type="text" name="sceondenvironment" id="sceondenvironment"
+                                        placeholder="Production / UAT" />
                                     <label class="fieldlabels">App functionality</label>
                                     <input type="text" name="sceondappfunctionality" id="sceondappfunctionality"
                                         placeholder="e.g. online banking, credit card statement, e-commerce shop, etc" />
@@ -119,7 +126,8 @@
                                     <input type="number" name="secondtestinghour" id="secondtestinghour"
                                         placeholder="Client’s Timeline to complete the Project" />
                                     <label class="fieldlabels">Testing to be done with credentials? (yes / no)</label>
-                                    <input type="text" name="sceondtestingcredentials" id="sceondtestingcredentials" placeholder="( Yes/No )" />
+                                    <input type="text" name="sceondtestingcredentials" id="sceondtestingcredentials"
+                                        placeholder="( Yes/No )" />
                                     <label class="fieldlabels">User Roles available in the system</label>
                                     <input type="text" name="sceonduserrole" id="sceonduserrole"
                                         placeholder="Specify number of roles available" />
@@ -133,32 +141,34 @@
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-9">
-                                            <h2 class="fs-title">API Testing:</h2>
+                                            <h2 class="fs-title">API Testing :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 3 - 8</h2>
                                         </div>
                                     </div>
                                     <label class="fieldlabels">API Url/s Mention all the APIs that will be in
-                                        scope:</label>
-                                    <input type="text" name="apiurl" id="apiurl" placeholder="Actual URL of the API used">
+                                        scope :</label>
+                                    <input type="text" name="apiurl" id="apiurl"
+                                        placeholder="Actual URL of the API used">
                                     <label class="fieldlabels">API document Workflow document of the API/s in
-                                        scope:</label>
+                                        scope :</label>
                                     <input type="text" name="apidocument" id="apidocument"
                                         placeholder="API document / workflow document">
-                                    <label class="fieldlabels">Environment:</label>
-                                    <input type="text" name="thirdenvironment" id="thirdenvironment" placeholder="Production / UAT">
-                                    <label class="fieldlabels">Demo App / Script calling the API:</label>
+                                    <label class="fieldlabels">Environment :</label>
+                                    <input type="text" name="thirdenvironment" id="thirdenvironment"
+                                        placeholder="Production / UAT">
+                                    <label class="fieldlabels">Demo App / Script calling the API :</label>
                                     <input type="text" name="demoapp" id="demoapp"
                                         placeholder="e.g. Need a demo app or script that calls the specific API to understand the parameters, values passed to the API">
-                                    <label class="fieldlabels">API calling sequence:</label>
+                                    <label class="fieldlabels">API calling sequence :</label>
                                     <input type="text" name="apicall" id="apicall"
                                         placeholder="Share the flow diagram, if not already mentioned in the API document.">
-                                    <label class="fieldlabels">Testing hours:</label>
-                                    <input type="text" name="thirdtestinghour" id="thirdtestinghour"
+                                    <label class="fieldlabels">Testing hours :</label>
+                                    <input type="number" name="thirdtestinghour" id="thirdtestinghour"
                                         placeholder="Client’s Time line to complete the Projec">
                                     <label class="fieldlabels">Is there a API key required to call a specific
-                                        API?:</label>
+                                        API? :</label>
                                     <input type="text" name="apikey" id="apikey" placeholder="Yes / No">
                                     <span>If Yes, will need the API Key</span>
                                 </div>
@@ -171,20 +181,21 @@
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-9">
-                                            <h2 class="fs-title">Network Assessment (if Required):</h2>
+                                            <h2 class="fs-title">Network Assessment (if Required) :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 4 - 8</h2>
                                         </div>
                                     </div>
-                                    <label class="fieldlabels">Number of external IPs in the network:</label>
+                                    <label class="fieldlabels">Number of external IPs in the network :</label>
                                     <input type="text" name="externalip" id="externalip" placeholder="Number of IPs">
-                                    <label class="fieldlabels">Number of internal IPs in the network:</label>
+                                    <label class="fieldlabels">Number of internal IPs in the network :</label>
                                     <input type="text" name="internalip" id="internalip" placeholder="Number of IPs">
-                                    <label class="fieldlabels">Onsite / offsite:</label>
+                                    <label class="fieldlabels">Onsite / offsite :</label>
                                     <input type="text" name="onsite" id="onsite" placeholder="On-site / Off-site">
-                                    <label class="fieldlabels">Network architecture diagram:</label>
-                                    <input type="file" name="networkdiagram" id="networkdiagram" placeholder="Network architecture diagram">
+                                    <label class="fieldlabels">Network architecture diagram :</label>
+                                    <input type="file" name="networkdiagram" id="networkdiagram"
+                                        placeholder="Network architecture diagram">
                                 </div>
                                 <input type="button" name="next" class="next action-button" value="Next" />
                                 <input type="button" name="previous" class="previous action-button-previous"
@@ -195,31 +206,35 @@
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-9">
-                                            <h2 class="fs-title">Cloud Security Assessment (If Required):</h2>
+                                            <h2 class="fs-title">Cloud Security Assessment (If Required) :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 5 - 8</h2>
                                         </div>
                                     </div>
                                     <label class="fieldlabels">How many services are hosted in the cloud infrastructure
-                                        (please share the list of services):</label>
-                                    <input type="text" name="manyservice" id="manyservice" placeholder="How many services are hosted">
+                                        (please share the list of services) :</label>
+                                    <input type="text" name="manyservice" id="manyservice"
+                                        placeholder="How many services are hosted">
                                     <label class="fieldlabels">Architecture / policy documentation for the in- scope
-                                        infrastructure/application:</label>
+                                        infrastructure/application :</label>
                                     <input type="text" name="policydocument" id="policydocument"
                                         placeholder="Architecture / policy documentation">
-                                    <label class="fieldlabels">No of environments in the cloud infrastructure:</label>
-                                    <input type="text" name="noenvironment" id="noenvironment" placeholder="i.e. AWS Organization">
+                                    <label class="fieldlabels">No of environments in the cloud infrastructure :</label>
+                                    <input type="text" name="noenvironment" id="noenvironment"
+                                        placeholder="i.e. AWS Organization">
                                     <label class="fieldlabels">If your cloud environment hosts code as infrastructure,
-                                        please provide the user roles who can access the code:</label>
-                                    <input type="text" name="developeruser" id="developeruser" placeholder="e.g. developer user">
+                                        please provide the user roles who can access the code :</label>
+                                    <input type="text" name="developeruser" id="developeruser"
+                                        placeholder="e.g. developer user">
                                     <label class="fieldlabels">List of user roles currently available in the cloud
-                                        environment (active users enabled in the cloud):</label>
+                                        environment (active users enabled in the cloud) :</label>
                                     <input type="text" name="listuser" id="listuser"
                                         placeholder="List of user roles currently available">
                                     <label class="fieldlabels">Process documents i.e. IT security policy, User
-                                        management, Data Security, Password Policy:</label>
-                                    <input type="text" name="processdocument" id="processdocument" placeholder="Process documents">
+                                        management, Data Security, Password Policy :</label>
+                                    <input type="text" name="processdocument" id="processdocument"
+                                        placeholder="Process documents">
                                 </div>
                                 <input type="button" name="next" class="next action-button" value="Next" />
                                 <input type="button" name="previous" class="previous action-button-previous"
@@ -231,7 +246,7 @@
                                     <div class="row">
                                         <div class="col-9">
                                             <h2 class="fs-title">Application Architecture Diagrams (if
-                                                available/applicable):</h2>
+                                                available/applicable) :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 6 - 8</h2>
@@ -239,7 +254,7 @@
                                     </div>
                                     <label class="fieldlabels">Please include any relevant application architecture
                                         diagrams with this questionnaire, to help us better understand the scope and
-                                        estimate the effort involved:</label>
+                                        estimate the effort involved :</label>
                                     <input type="file" name="diagramfile" id="diagramfile">
 
                                 </div>
@@ -252,7 +267,7 @@
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-9">
-                                            <h2 class="fs-title">Environment for testing:</h2>
+                                            <h2 class="fs-title">Environment for testing :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 7 - 8</h2>
@@ -275,7 +290,7 @@
                                 <div class="form-card">
                                     <div class="row">
                                         <div class="col-9">
-                                            <h2 class="fs-title">Access to the application:</h2>
+                                            <h2 class="fs-title">Access to the application :</h2>
                                         </div>
                                         <div class="col-3">
                                             <h2 class="steps">Step 8 - 8</h2>
@@ -283,16 +298,16 @@
                                     </div>
                                     <label class="fieldlabels">Access to the target application, can be provided to
                                         StackSharp in any one of the
-                                        below mentioned options to perform remote testing:</label>
-                                    <p>For UAT application testing:</p>
+                                        below mentioned options to perform remote testing :</label>
+                                    <p>For UAT application testing :</p>
                                     <p>1) Whitelist StackSharp source IP addresses to access the target application.</p>
                                     <p>2) Client company to create a VPN tunnel to establish a secure connection</p>
                                     <p>between Stacksharp and target network.</p>
-                                    <label class="fieldlabels">For Production application testing:</label>
+                                    <label class="fieldlabels">For Production application testing :</label>
                                     <p>1) After authorizations and permissions provided by the client, Stacksharp can
                                         access the in-scope targets over internet.</p>
                                 </div>
-                                <input type="button" name="next" class="next action-button" value="Submit" />
+                                <input type="submit" name="next" class="next action-button" value="Submit" />
                                 <input type="button" name="previous" class="previous action-button-previous"
                                     value="Previous" />
                             </fieldset>
@@ -302,12 +317,14 @@
                                     <br><br>
                                     <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
                                     <div class="row justify-content-center">
-                                        <div class="col-3"> <img src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png"
+                                        <div class="col-3"> <img
+                                                src="https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png"
                                                 class="fit-image"> </div>
                                     </div> <br><br>
                                     <div class="row justify-content-center">
                                         <div class="col-9 text-center">
-                                            <h5 class="purple-text text-center">You Have Successfully fillup the form</h5>
+                                            <h5 class="purple-text text-center">You Have Successfully fillup the form
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
@@ -318,164 +335,16 @@
             </div>
         </div>
     </section>
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-    <script>
-        // php ajax
-        $(document).ready(function () {
-         $("form").submit(function (event) {
-            var formData = {
-                applicationname: $("#applicationname").val(),
-                applicationurl: $("#applicationurl").val(),
-                firstenvironment: $("#firstenvironment").val(),
-                numberofpages: $("#numberofpages").val(),
-                boxTesting: $("#boxTesting").val(),
-                firstappfunctionality: $("#firstappfunctionality").val(),
-                tentativestartdate: $("#tentativestartdate").val(),
-                firsttestingcredentials: $("#firsttestingcredentials").val(),
-                userroles: $("#userroles").val(),
-                linescode: $("#linescode").val(),
 
+    <script src="./form.js"></script>
 
-                application2: $("#application2").val(),
-                applicationcommunicate: $("#applicationcommunicate").val(),
-                applicationruns: $("#applicationruns").val(),
-                numberscreen: $("#numberscreen").val(),
-                sceondenvironment: $("#sceondenvironment").val(),
-                sceondappfunctionality: $("#sceondappfunctionality").val(),
-                secondtestinghour: $("#secondtestinghour").val(),
-                sceondtestingcredentials: $("#sceondtestingcredentials").val(),
-                sceonduserrole: $("#sceonduserrole").val(),
-
-
-
-                apiurl: $("#apiurl").val(),
-                apidocument: $("#apidocument").val(),
-                thirdenvironment: $("#thirdenvironment").val(),
-                demoapp: $("#demoapp").val(),
-                apicall: $("#apicall").val(),
-                thirdtestinghour: $("#thirdtestinghour").val(),
-                apikey: $("#apikey").val(),
-
-
-
-                externalip: $("#externalip").val(),
-                internalip: $("#internalip").val(),
-                onsite: $("#onsite").val(),
-                networkdiagram: $("#networkdiagram").val(),
-
-
-                manyservice: $("#manyservice").val(),
-                policydocument: $("#policydocument").val(),
-                noenvironment: $("#noenvironment").val(),
-                developeruser: $("#developeruser").val(),
-                listuser: $("#listuser").val(),
-                processdocument: $("#processdocument").val(),
-
-
-                diagramfile: $("#diagramfile").val(),
-
-        
-
-            };
-           
-            $.ajax({
-               type: "POST",
-               url: "https://lancerswork.info/SoniaProjects/stacksharp/formemail.php",
-               data: formData,
-               dataType: "json",
-               encode: true,
-            }).done(function (data) {
-               console.log(data);
-            });
-
-            event.preventDefault();
-         });
-      });
-
-
-        // next previous
-
-        $(document).ready(function () {
-            var current_fs, next_fs, previous_fs; //fieldsets
-            var opacity;
-            var current = 1;
-            var steps = $("fieldset").length;
-
-            setProgressBar(current);
-
-            $(".next").click(function () {
-
-                current_fs = $(this).parent();
-                next_fs = $(this).parent().next();
-
-                //Add Class Active
-                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-                //show the next fieldset
-                next_fs.show();
-                //hide the current fieldset with style
-                current_fs.animate({ opacity: 0 }, {
-                    step: function (now) {
-                        // for making fielset appear animation
-                        opacity = 1 - now;
-
-                        current_fs.css({
-                            'display': 'none',
-                            'position': 'relative'
-                        });
-                        next_fs.css({ 'opacity': opacity });
-                    },
-                    duration: 500
-                });
-                setProgressBar(++current);
-            });
-
-            $(".previous").click(function () {
-
-                current_fs = $(this).parent();
-                previous_fs = $(this).parent().prev();
-
-                //Remove class active
-                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-                //show the previous fieldset
-                previous_fs.show();
-
-                //hide the current fieldset with style
-                current_fs.animate({ opacity: 0 }, {
-                    step: function (now) {
-                        // for making fielset appear animation
-                        opacity = 1 - now;
-
-                        current_fs.css({
-                            'display': 'none',
-                            'position': 'relative'
-                        });
-                        previous_fs.css({ 'opacity': opacity });
-                    },
-                    duration: 500
-                });
-                setProgressBar(--current);
-            });
-
-            function setProgressBar(curStep) {
-                var percent = parseFloat(100 / steps) * curStep;
-                percent = percent.toFixed();
-                $(".progress-bar")
-                    .css("width", percent + "%")
-            }
-
-            $(".submit").click(function () {
-                return false;
-            })
-
-        });
-    </script>
 </body>
 
 </html>

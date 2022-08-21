@@ -585,7 +585,7 @@ a {
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-  
+
 
     .header li a {
         padding: 20px 10px;
@@ -805,7 +805,7 @@ a {
 
 .serviceContent {
     margin: 50px 0px;
-    height: 382px;
+    height: 630px;
 }
 
 .serviceContent h3 {
@@ -822,6 +822,18 @@ a {
     color: #bbb;
     margin-bottom: 4px;
 }
+
+.service-1 ul,
+.service-2 ul,
+.service-3 ul,
+.service-4 ul,
+.service-5 ul,
+.service-6 ul {
+    list-style-type: disc;
+    padding-left: 1rem !important;
+}
+
+
 
 .service-1 {
     background: #1A2020;
@@ -857,7 +869,7 @@ a {
 }
 
 .service-2 {
-    background: #432020;
+    background: #ffffff;
     padding: 40px;
     border-radius: 15px;
 }
@@ -905,7 +917,7 @@ a {
 }
 
 .service-4 {
-    background: #432020;
+    background: #ffffff;
     padding: 40px;
     border-radius: 15px;
 }
@@ -953,7 +965,7 @@ a {
 }
 
 .service-6 {
-    background: #432020;
+    background: #ffffff;
     padding: 40px;
     border-radius: 15px;
 }
@@ -975,7 +987,21 @@ a {
     align-items: center;
     display: grid;
 }
-
+.service-1  ul li,
+.service-3  ul li,
+.service-5  ul li {
+    color: rgb(221, 221, 221) !important;
+}
+.service-2  h3,
+.service-4  h3,
+.service-6  h3 {
+    color: #000 !important;
+}
+.service-2  p,
+.service-4  p,
+.service-6  p {
+    color: rgb(14, 14, 14) !important;
+}
 /* why choose */
 .whyChooseUs {
     margin: 80px 0px;
@@ -1085,7 +1111,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    color: #ce1b28;
+    color: #fcfcfc;
 }
 
 .pricing .cardTop {
@@ -1369,7 +1395,7 @@ a {
 
 .accordion button[aria-expanded=true]+.accordion-content {
     opacity: 1;
-    max-height: 15em;
+    max-height: 50em;
     transition: all 200ms linear;
     will-change: opacity, max-height;
 
@@ -1790,6 +1816,16 @@ a {
 .bannerImage {
     text-align: center;
 }
+.bannerImage img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
 
 .bannerHeading h1 {
     font-size: 56px;
@@ -1880,9 +1916,9 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-    .serviceContent {
+    /* .serviceContent {
         height: 422px;
-    }
+    } */
 
     .footer-dark h3 {
         height: 58px;
@@ -1912,10 +1948,13 @@ a {
 }
 
 @media screen and (max-width: 778px) {
-    .bannerImage img {
+    .bannerHeading h1 {
+        font-size: 44px;
+    }
+    /* .bannerImage img {
         text-align: center;
         width: 100%;
-    }
+    } */
 
     .bannerSection {
         height: auto !important;

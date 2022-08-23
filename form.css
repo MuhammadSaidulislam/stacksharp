@@ -121,10 +121,10 @@ html {
 
 .fs-title {
     font-size: 25px;
-color: #ce1b28;
-margin-bottom: 15px;
-text-align: left;
-font-weight: 700;
+    color: #ce1b28;
+    margin-bottom: 15px;
+    text-align: left;
+    font-weight: 700;
 }
 
 .purple-text {
@@ -134,10 +134,10 @@ font-weight: 700;
 
 .steps {
     font-size: 22px;
-color: #222;
-margin-bottom: 10px;
-font-weight: 400;
-text-align: right;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: right;
 }
 
 .fieldlabels {
@@ -159,7 +159,8 @@ text-align: right;
     width: 100%;
     object-fit: cover
 }
-.form-card span{
+
+.form-card span {
     color: #ce1b28;
     text-align: left;
     font-size: 14px;
@@ -167,4 +168,14 @@ text-align: right;
     margin-top: -15px;
     margin-bottom: 15px;
     display: block;
+}
+
+@media screen and (max-width: 778px) {
+    .fs-title {
+        font-size: 13px;
+    }
+
+    .steps {
+        font-size: 13px;
+    }
 }

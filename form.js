@@ -3,6 +3,17 @@
 $(document).ready(function () {
     $("form").submit(function (event) {
         var formData = {
+
+
+            username: $("#username").val(),
+            companyname: $("#companyname").val(),
+            officeaddress: $("#officeaddress").val(),
+            emailaddress: $("#emailaddress").val(),
+            phonenumber: $("#phonenumber").val(),
+
+
+
+
             applicationname: $("#applicationname").val(),
             applicationurl: $("#applicationurl").val(),
             firstenvironment: $("#firstenvironment").val(),

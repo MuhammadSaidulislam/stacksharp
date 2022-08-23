@@ -70,7 +70,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "https://lancerswork.info/SoniaProjects/stacksharp/formemail.php",
+            url: "https://stacksharp.com/formemail.php",
             data: formData,
             dataType: "json",
             encode: true,

@@ -41,19 +41,26 @@
                                         </div>
                                     </div>
                                     <label class="fieldlabels">User name :</label>
-                                    <input type="text" name="username" id="username" placeholder="User name" />
+                                    <input type="text" name="username" id="username" placeholder="User name" required />
+                                    <div id="showusername"></div>
                                     <label class="fieldlabels">Company Name :</label>
-                                    <input type="text" name="companyname" id="companyname" placeholder="Company Name" />
+                                    <input type="text" name="companyname" id="companyname" placeholder="Company Name"
+                                        required />
+                                    <div id="showcompany"></div>
                                     <label class="fieldlabels">Office address :</label>
                                     <input type="text" name="officeaddress" id="officeaddress"
-                                        placeholder="Office address" />
+                                        placeholder="Office address" required />
                                     <label class="fieldlabels">Email :</label>
-                                    <input type="text" name="emailaddress" id="emailaddress"
-                                        placeholder="Email address" />
+                                    <input type="email" name="emailaddress" id="emailaddress"
+                                        placeholder="Email address" required />
+                                    <div id="showemailaddress"></div>
                                     <label class="fieldlabels">Phone</label>
-                                    <input type="text" name="phonenumber" id="phonenumber" placeholder="phone" />
+                                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="phone"
+                                        required />
+                                    <div id="showphonenumber"></div>
                                 </div>
-                                <input type="button" name="next" class="next action-button" value="Next" />
+                                <input type="button" onclick="requirement()" id="nextclick"
+                                    class="nextclick action-button" value="Next" />
                             </fieldset>
                             <!-- section two -->
                             <fieldset>
@@ -371,6 +378,89 @@
 
 
     <script src="./form.js"></script>
+
+    <script>
+        $(function () {
+            $("input[name='phonenumber']").on('input', function (e) {
+                $(this).val($(this).val().replace(/[^0-9]/g, ''));
+            });
+        });
+
+        function requirement() {
+
+            var username = document.getElementById("username").value;
+            var companyname = document.getElementById("companyname").value;
+            // var emailaddress = document.getElementById("emailaddress").value;
+            var phonenumber = document.getElementById("phonenumber").value;
+            if (username === "") {
+                document.getElementById("showusername").innerHTML = `<p style="color: red; margin-bottom: 0px !important;"><b>Please enter your user name</b></p>`
+            }
+            else if (companyname === "") {
+                document.getElementById("showcompany").innerHTML = `<p style="color: red; margin-bottom: 0px !important;"><b>Please enter your company name</b></p>`
+            }
+            else if (!document.getElementById("emailaddress").checkValidity()) {
+                document.getElementById("showemailaddress").innerHTML = `<p style="color: red; margin-bottom: 0px !important;"><b>Please enter valid email</b></p>`
+           }
+            else if (phonenumber === "") {
+                document.getElementById("showphonenumber").innerHTML = `<p style="color: red; margin-bottom: 0px !important;"><b>Please enter your phone number</b></p>`
+            }
+            else {
+                console.log('fail', username);
+                document.getElementById("showusername").innerHTML = null;
+                document.getElementById("showcompany").innerHTML = null;
+                 document.getElementById("showemailaddress").innerHTML = null;
+                document.getElementById("showphonenumber").innerHTML = null;
+                $(document).ready(function () {
+
+                    var current_fs, next_fs, previous_fs;
+                    var opacity;
+                    var current = 1;
+                    var steps = $("fieldset").length;
+                    setProgressBar(current);
+
+                    $("#nextclick").click(function () {
+
+                        current_fs = $(this).parent();
+                        next_fs = $(this).parent().next();
+
+                        //Add Class Active
+                        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                        //show the next fieldset
+                        next_fs.show();
+                        //hide the current fieldset with style
+                        current_fs.animate({ opacity: 0 }, {
+                            step: function (now) {
+                                // for making fielset appear animation
+                                opacity = 1 - now;
+
+                                current_fs.css({
+                                    'display': 'none',
+                                    'position': 'relative'
+                                });
+                                next_fs.css({ 'opacity': opacity });
+                            },
+                            duration: 500
+                        });
+                        setProgressBar(++current);
+                    });
+
+
+                    function setProgressBar(curStep) {
+                        var percent = parseFloat(100 / steps) * curStep;
+                        percent = percent.toFixed();
+                        $(".progress-bar")
+                            .css("width", percent + "%")
+                    }
+
+
+
+                });
+            }
+
+        }
+
+    </script>
 
 </body>
 

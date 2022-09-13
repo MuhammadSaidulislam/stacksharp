@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    <title>dev-tools</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="header_content __has_border">
+                       <a href="https://currency.helloswift.co/config" class="__back_breadcrumb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>Settings</a>
+                       <h1 class="h2 heading-page">Developer Tools</h1>
+                    </div>
+                 
+                    <div class="__contentOuter">
+                       <form class="dev_tools_form" action="https://currency.helloswift.co/save/dev-tools" method="POST">
+                          <input type="hidden" name="_token" value="aHNNkNnHmmQiVgx2MRtsXwGmmE4UrCIzQhAgoHeo">
+                          <div class="row">
+                             <div class="col-sm-4">
+                                <div class="__ui-layout__item__left-header">
+                                   <h3 class="__ui-layout__item__heading">Converter Custom Selector</h3>
+                                   <p class="__ui__help__Text">Add custom selector, Where you want to append Currency Converter.</p>
+                                </div>
+                             </div>
+                             <div class="col-sm-8 __ContentArea pd-t-0">
+                                <div class="__ui-layout__item">
+                                   <div class="__ui__item__card">
+                                      <div class="__form-group">
+                                         <label class="__uiCard_label">JQuery Selector</label>
+                                         <input type="text" class="form-control __pbInput" placeholder=".site_header" name="customSelector" value="">
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                 
+                          <div class="row __has_border-top">
+                             <div class="col-sm-4">
+                                <div class="__ui-layout__item__left-header">
+                                   <h3 class="__ui-layout__item__heading">Price Selector</h3>
+                                   <p class="__ui__help__Text">Add custom selector, if App unable to find money selector.</p>
+                                </div>
+                             </div>
+                             <div class="col-sm-8 __ContentArea pd-t-0">
+                                <div class="__ui-layout__item">
+                                   <div class="__ui__item__card">
+                                      <div class="__form-group">
+                                         <label class="__uiCard_label">JQuery Selector</label>
+                                         <input type="text" class="form-control __pbInput" placeholder=".price" name="staticMoneySelector" value="">
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          
+                          <div class="row __has_border-top">
+                             <div class="col-sm-4">
+                                <div class="__ui-layout__item__left-header">
+                                   <h3 class="__ui-layout__item__heading">Custom CSS</h3>
+                                   <p class="__ui__help__Text">Add Custom CSS to style your Converter as you wish.</p>
+                                </div>
+                             </div>
+                             <div class="col-sm-8 __ContentArea pd-t-0">
+                                <div class="__ui-layout__item">
+                                   <div class="__ui__item__card p-b-0">
+                                     <div class="__form-group">
+                                         <label class="__uiCard_label">CSS</label>
+                                         <textarea class="form-control __pbInput custom-css" name="customCSS"></textarea>
+                                     </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                 
+                          <div class="row">
+                             <div class="col-sm-12">
+                                <div class="__ui-layout_actions">
+                                   <button type="reset" class="btn btn-secondary">Cancel</button>
+                                   <button type="submit" class="btn-pb-primary submit-btn">Save</button>
+                                </div>
+                             </div>
+                          </div>
+                       </form>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="text-center">
+        <p class="footer-text">Dynamic Currency Converter © 2022 - Developed by <span>
+            <a href="" target="_blank">Zoomifi</a></span></p>
+    </footer>
+</body>
+
+</html>

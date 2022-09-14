@@ -12,14 +12,15 @@ body {
     max-width: 950px;
     margin: auto;
     width: 100%;
+    padding: 40px 0px;
 }
 
-.header_content.__has_border {
+.header_content.has_border {
     border-bottom: 1px solid #dfe3e8;
     padding-bottom: 20px;
 }
 
-.header_content .__back_breadcrumb {
+.header_content .back_breadcrumb {
     font-size: 0.8rem;
     display: inline-block;
     margin: 0 0 10px;
@@ -47,23 +48,25 @@ body {
 }
 
 /* content */
-.__contentOuter {
+.helpcontent {
     padding: 30px 0 20px;
 }
-
-.__ui-layout__item__left-header .__ui-layout__item__heading {
+.dev-tools-content{
+    padding: 30px 0 20px;
+}
+.left-header .item-heading {
     font-size: 0.9rem;
     margin-bottom: 20px;
     margin-top: 10px;
     font-weight: 600;
 }
 
-.__ui-layout__item__left-header .__ui__help__Text {
+.left-header .help-Text {
     font-size: 0.8rem;
     color: #637381;
 }
 
-.__ui-layout__item {
+.layout-item {
     background: #fff;
     padding: 20px;
     border-radius: 4px;
@@ -73,11 +76,11 @@ body {
     margin: 0 0 30px;
 }
 
-.__ui-layout__item .__ui__item__card {
+.layout-item .item-card {
     padding: 0 0 10px;
 }
 
-.__ui-layout__item .__uiCard_label {
+.layout-item .card-label {
     font-size: 0.8rem;
     color: #212b36;
     margin-bottom: 5px;
@@ -95,12 +98,12 @@ body {
     -moz-transition: cubic-bezier(0.64, 0, 0.35, 1);
 }
 
-.__has_border-top {
+.border-top {
     position: relative;
     padding-top: 25px;
 }
 
-.__has_border-top::before {
+.border-top::before {
     content: "";
     position: absolute;
     top: 0;
@@ -113,7 +116,7 @@ body {
     min-height: 400px !important;
 }
 
-.__ui-layout_actions {
+.layout-actions {
     border-top: 1px solid #dfe3e8;
     padding: 20px 15px;
     margin: 0 -20px;
@@ -123,7 +126,19 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+.cancelBtn{
+    background: linear-gradient(to bottom, #fff, #ffffff);
+    border: 1px solid #dfe3e8;
+    -webkit-box-shadow: 0 1px 0 0 rgba(22,29,37,0.05);
+    box-shadow: 0 1px 0 0 rgba(22,29,37,0.05);
+    color: #212b36 !important;
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: cubic-bezier(0.64, 0, 0.35, 1);
+    -webkit-transition: cubic-bezier(0.64, 0, 0.35, 1);
+    -moz-transition: cubic-bezier(0.64, 0, 0.35, 1);
+}
 .btn-pb-primary {
     background: linear-gradient(180deg, #6371c7, #5563c1);
     box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 0 0 transparent;
@@ -144,7 +159,7 @@ body {
     -moz-transition: all 0.3s ease;
 }
 
-.__form-group .form-control:focus {
+.card-form-group .form-control:focus {
     color: #212529;
     outline: 0;
     border: 1px solid #5c6ac4;
@@ -232,8 +247,10 @@ body {
 }.accordion-item .card-body {
     color: #637381;
 }
-
-.other-help-wrapper .contact-us-wrapper {
+.other-help{
+    padding: 40px 0px;
+}
+.other-help .contact-us {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
@@ -241,7 +258,7 @@ body {
     justify-content: center;
 }
 
-.other-help-wrapper .contact-us-wrapper .contact-us-btn {
+.other-help .contact-us .contact-us-btn {
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
@@ -258,7 +275,7 @@ body {
     margin: 10px;
 }
 
-.other-help-wrapper .contact-us-wrapper .contact-us-btn .contact-us-icon {
+.other-help .contact-us .contact-us-btn .contact-us-icon {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -273,13 +290,13 @@ body {
     justify-content: center;
 }
 
-.other-help-wrapper .contact-us-wrapper .contact-us-btn .contact-us-icon svg {
+.other-help .contact-us .contact-us-btn .contact-us-icon svg {
     fill: #fff;
     width: 25px;
     height: 25px;
 }
 
-.other-help-wrapper .contact-us-wrapper .contact-us-btn .contact-us-outer {
+.other-help .contact-us .contact-us-btn .contact-us-outer {
     padding-left: 10px;
     display: flex;
     display: -webkit-flex;
@@ -288,13 +305,13 @@ body {
     width: calc(100% - 50px);
 }
 
-.other-help-wrapper .contact-us-wrapper .contact-us-btn .contact-us-outer .contact-us-text {
+.other-help .contact-us .contact-us-btn .contact-us-outer .contact-us-text {
     font-size: 0.9rem;
     color: #212b36;
     font-family: "PoppinsMedium";
 }
 
-.other-help-wrapper .contact-us-wrapper .contact-us-btn .contact-us-outer .contact-us-desc {
+.other-help .contact-us .contact-us-btn .contact-us-outer .contact-us-desc {
     font-size: 0.8rem;
     color: #637381;
 }
@@ -316,3 +333,9 @@ footer {
 .footer-text a {
     text-decoration: none;
 }
+@media only screen and (max-width: 600px) {
+    .footer-text{
+        display: inline-block;
+        width: 90%;
+    }
+  }

@@ -18,65 +18,64 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="wrapper">
-                    <div class="header_content __has_border">
-                       <a href="https://currency.helloswift.co/config" class="__back_breadcrumb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>Settings</a>
-                       <h1 class="h2 heading-page">Developer Tools</h1>
+                    <div class="header_content has_border">
+                       <a href="https://currency.helloswift.co/config" class="back_breadcrumb"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>Settings</a>
+                       <h1 class="heading-page">Developer Tools</h1>
                     </div>
                  
-                    <div class="__contentOuter">
-                       <form class="dev_tools_form" action="https://currency.helloswift.co/save/dev-tools" method="POST">
+                    <div class="dev-tools-content">
                           <input type="hidden" name="_token" value="aHNNkNnHmmQiVgx2MRtsXwGmmE4UrCIzQhAgoHeo">
                           <div class="row">
                              <div class="col-sm-4">
-                                <div class="__ui-layout__item__left-header">
-                                   <h3 class="__ui-layout__item__heading">Converter Custom Selector</h3>
-                                   <p class="__ui__help__Text">Add custom selector, Where you want to append Currency Converter.</p>
+                                <div class="left-header">
+                                   <h3 class="item-heading">Converter Custom Selector</h3>
+                                   <p class="help-Text">Add custom selector, Where you want to append Currency Converter.</p>
                                 </div>
                              </div>
-                             <div class="col-sm-8 __ContentArea pd-t-0">
-                                <div class="__ui-layout__item">
-                                   <div class="__ui__item__card">
-                                      <div class="__form-group">
-                                         <label class="__uiCard_label">JQuery Selector</label>
-                                         <input type="text" class="form-control __pbInput" placeholder=".site_header" name="customSelector" value="">
+                             <div class="col-sm-8 pd-t-0">
+                                <div class="layout-item">
+                                   <div class="item-card">
+                                      <div class="card-form-group">
+                                         <label class="card-label">JQuery Selector</label>
+                                         <input type="text" class="form-control pbInput" placeholder=".site_header" name="customSelector" value="">
                                       </div>
                                    </div>
                                 </div>
                              </div>
                           </div>
                  
-                          <div class="row __has_border-top">
+                          <div class="row border-top">
                              <div class="col-sm-4">
-                                <div class="__ui-layout__item__left-header">
-                                   <h3 class="__ui-layout__item__heading">Price Selector</h3>
-                                   <p class="__ui__help__Text">Add custom selector, if App unable to find money selector.</p>
+                                <div class="left-header">
+                                   <h3 class="item-heading">Price Selector</h3>
+                                   <p class="help-Text">Add custom selector, if App unable to find money selector.</p>
                                 </div>
                              </div>
-                             <div class="col-sm-8 __ContentArea pd-t-0">
-                                <div class="__ui-layout__item">
-                                   <div class="__ui__item__card">
-                                      <div class="__form-group">
-                                         <label class="__uiCard_label">JQuery Selector</label>
-                                         <input type="text" class="form-control __pbInput" placeholder=".price" name="staticMoneySelector" value="">
+                             <div class="col-sm-8 pd-t-0">
+                                <div class="layout-item">
+                                   <div class="item-card">
+                                      <div class="card-form-group">
+                                         <label class="card-label">JQuery Selector</label>
+                                         <input type="text" class="form-control pbInput" placeholder=".price" name="staticMoneySelector" value="">
                                       </div>
                                    </div>
                                 </div>
                              </div>
                           </div>
                           
-                          <div class="row __has_border-top">
+                          <div class="row border-top">
                              <div class="col-sm-4">
-                                <div class="__ui-layout__item__left-header">
-                                   <h3 class="__ui-layout__item__heading">Custom CSS</h3>
-                                   <p class="__ui__help__Text">Add Custom CSS to style your Converter as you wish.</p>
+                                <div class="left-header">
+                                   <h3 class="item-heading">Custom CSS</h3>
+                                   <p class="help-Text">Add Custom CSS to style your Converter as you wish.</p>
                                 </div>
                              </div>
-                             <div class="col-sm-8 __ContentArea pd-t-0">
-                                <div class="__ui-layout__item">
-                                   <div class="__ui__item__card p-b-0">
-                                     <div class="__form-group">
-                                         <label class="__uiCard_label">CSS</label>
-                                         <textarea class="form-control __pbInput custom-css" name="customCSS"></textarea>
+                             <div class="col-sm-8 pd-t-0">
+                                <div class="layout-item">
+                                   <div class="item-card p-b-0">
+                                     <div class="card-form-group">
+                                         <label class="card-label">CSS</label>
+                                         <textarea class="form-control pbInput custom-css" name="customCSS"></textarea>
                                      </div>
                                    </div>
                                 </div>
@@ -85,13 +84,12 @@
                  
                           <div class="row">
                              <div class="col-sm-12">
-                                <div class="__ui-layout_actions">
-                                   <button type="reset" class="btn btn-secondary">Cancel</button>
+                                <div class="layout-actions">
+                                   <button type="reset" class="btn btn-secondary cancelBtn">Cancel</button>
                                    <button type="submit" class="btn-pb-primary submit-btn">Save</button>
                                 </div>
                              </div>
                           </div>
-                       </form>
                      </div>
                  </div>
             </div>

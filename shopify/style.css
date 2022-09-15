@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
+:root {
+    --backgroundColor: #f4f6f8; 
+    /* login page */
+   --loginHeading: #212b36;
+   /* dev tools */
+   --devtoolHeading: #212b36;
+   --devToolPara: #637381;
+   --saveBtn:linear-gradient(180deg, #6371c7, #5563c1);
+   --inputHeading: #212b36;
+   /* help */
+   --helpHeading: #212b36;
+   --helpStep:#637381;
+  }
+  
 body {
     font-family: 'Poppins', sans-serif;
     font-size: .875rem;
-    background: #f4f6f8;
+    background: var(--backgroundColor);
     position: relative;
-    color: #212b36;
+    /* color: #212b36; */
 }
 
 .wrapper {
@@ -59,11 +72,12 @@ body {
     margin-bottom: 20px;
     margin-top: 10px;
     font-weight: 600;
+    color: var(--devtoolHeading);
 }
 
 .left-header .help-Text {
     font-size: 0.8rem;
-    color: #637381;
+    color: var(--devToolPara);
 }
 
 .layout-item {
@@ -82,7 +96,7 @@ body {
 
 .layout-item .card-label {
     font-size: 0.8rem;
-    color: #212b36;
+    color: var(--inputHeading);
     margin-bottom: 5px;
 }
 
@@ -140,7 +154,7 @@ body {
     -moz-transition: cubic-bezier(0.64, 0, 0.35, 1);
 }
 .btn-pb-primary {
-    background: linear-gradient(180deg, #6371c7, #5563c1);
+    background: var(--saveBtn);
     box-shadow: inset 0 1px 0 0 #6774c8, 0 1px 0 0 rgba(22, 29, 37, 0.05), 0 0 0 0 transparent;
     border: 1px solid #3f4eae;
     color: #fff;
@@ -185,6 +199,7 @@ body {
 .login-card .app_name {
     font-size: 1.5rem;
     font-weight: 600;
+    color: var(--loginHeading);
 }
 
 .login-card .login-form {
@@ -222,7 +237,7 @@ body {
     transition: transform .2s ease-in-out;
   }
 .accordion-header .accordion-button span {
-    color: #212b36;
+    color: var(--helpHeading);
     text-align: left;
     font-size: 0.8rem;
     font-weight: 400;
@@ -245,7 +260,7 @@ body {
     max-width: 100%;
     margin-bottom: 30px;
 }.accordion-item .card-body {
-    color: #637381;
+    color: var(--helpStep);
 }
 .other-help{
     padding: 40px 0px;
